@@ -1,0 +1,40 @@
+[colors]
+foreground=ffffff
+background=000000
+
+## Normal/regular colors (color palette 0-7)
+regular0=000000  # black
+regular1=cd0000  # red
+regular2=00cd00  # green
+regular3=cdcd00  # yellow
+regular4=4040ff  # blue
+regular5=cd00cd  # magenta
+regular6=00cdcd  # cyan
+regular7=e5e5e5  # white
+
+## Bright colors (color palette 8-15)
+bright0=7f7f7f   # bright black
+bright1=ff0000   # bright red
+bright2=00ff00   # bright green
+bright3=ffff00   # bright yellow
+bright4=5c5cff   # bright blue
+bright5=ff00ff   # bright magenta
+bright6=00ffff   # bright cyan
+bright7=ffffff   # bright white
+
+## dimmed colors (see foot.ini(5) man page)
+# dim0=<not set>
+# ...
+# dim7=<not-set>
+
+## The remaining 256-color palette
+# 16 = <256-color palette #16>
+# ...
+# 255 = <256-color palette #255>
+
+## Misc colors
+# selection-foreground=<inverse foreground/background>
+# selection-background=<inverse foreground/background>
+# jump-labels=<regular0> <regular3>
+# urls=<regular3>
+# scrollback-indicator=<regular0> <bright4>
