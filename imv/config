@@ -1,0 +1,8 @@
+[options]
+background = checks
+[binds]
+h = prev
+j = next
+k = prev
+l = next
+<Shift+D> = exec rm "$imv_current_file"; close
