@@ -1,0 +1,30 @@
+[user]
+  email = psyill.net@gmail.com
+  name = Hans Ellegård
+[core]
+  autocrlf = input
+  editor = editor.fish
+  pager = less -F -X
+[color]
+  pager = true
+  ui = auto
+[merge]
+  guitool = bc4
+  tool = nvimdiff
+[diff]
+  guitool = bc4
+  tool = nvimdiff
+[difftool]
+  guiDefault = true
+  prompt = false
+[mergetool]
+  guiDefault = true
+  keepBackup = false
+  prompt = true
+[alias]
+  cleantree = "!git clean -dfx; git submodule foreach --recursive git clean -dfx"
+  list = log --date='format:%F %R' --pretty='format:%Cred%h %Cgreen%ad %C(bold yellow)%D %Creset%s'
+[protocol.file]
+  allow = always
+[pull]
+  ff = only
