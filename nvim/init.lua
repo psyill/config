@@ -23,10 +23,13 @@ autocmd Syntax * syn match Error /\s\+$\| \+\ze\t/
 map <F5> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-
-" alias for introducing missing std:: in front of types from <cstdint>
-command CorrectCStdInt :%s/\(\_^\|[^:]\)\zs\ze\<u\?int[0-9]\+_t/std::/gc
 ]])
+-- alias for introducing missing std:: in front of types from <cstdint>
+vim.api.nvim_create_user_command(
+  'CorrectCStdInt',
+  [[:%s/\(\_^\|[^:]\)\zs\ze\<u\?int[0-9]\+_t/std::/gc]],
+  {}
+)
 vim.api.nvim_create_user_command(
   'Tbn',
   ':tab split <bar> :bn',
