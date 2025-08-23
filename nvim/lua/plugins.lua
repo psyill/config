@@ -54,15 +54,17 @@ local on_attach = function(client, bufnr)
     vim.lsp.inlay_hint.enable(true, { bufnr=bufnr })
   end
   -- Mappings.
+  --
   -- See `:help vim.lsp.*` for documentation on any of the below functions
+  local float_border = { "┌", " " ,"┐", "│", "┘", " ", "└", "│" }
   local bufopts = { noremap=true, silent=true, buffer=bufnr }
   vim.keymap.set('n', '<F1>', function()
-    vim.lsp.buf.hover({ border = "rounded" })
+    vim.lsp.buf.hover({ border = float_border })
   end, bufopts)
   vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, bufopts)
   vim.keymap.set('n', '<F3>', vim.lsp.buf.format, bufopts)
   vim.keymap.set('n', '<leader><F1>', function()
-    vim.diagnostic.open_float({ border = "rounded" })
+    vim.diagnostic.open_float({ border = float_border })
   end, bufopts)
   vim.keymap.set('n', '<leader>D', in_new_tab(vim.lsp.buf.declaration), bufopts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
