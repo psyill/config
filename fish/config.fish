@@ -3,9 +3,9 @@
 if status is-login
   set --export --path --prepend PATH "$HOME/.cargo/bin" "$HOME/.local/bin"
 
-  set --export --path RIPGREP_CONFIG_PATH /home/hans/.config/ripgrep/config
+  set --export --path RIPGREP_CONFIG_PATH "$HOME/.config/ripgrep/config"
 
-  set --export ANDROID_SDK_ROOT $HOME/android-sdk
+  set --export ANDROID_SDK_ROOT "$HOME/android-sdk"
   #set --export STUDIO_JDK /usr/lib/jvm/java-11-openjdk
 
   set --export QT_QPA_PLATFORM wayland-egl
@@ -15,14 +15,7 @@ if status is-login
 
   set --export SDL_VIDEODRIVER wayland
 
-  # https://github.com/swaywm/sway/issues/595
-  set --export _JAVA_AWT_WM_NONREPARENTING 1
-
   eval (ssh-agent -c) &> /dev/null
-  # Export variables set by DBus.
-  for line in (dbus-launch)
-    set --export (string split --max 1 '=' $line)
-  end
 
   set --export PIPEWIRE_RUNTIME_DIR $XDG_RUNTIME_DIR/pipewire
   set --export PULSE_RUNTIME_PATH $XDG_RUNTIME_DIR/pulse
