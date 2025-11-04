@@ -76,16 +76,15 @@ end
 
 -- Setup lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local lspconfig = require('lspconfig')
-lspconfig.clangd.setup {
+vim.lsp.config('clangd', {
   capabilities = capabilities,
   on_attach = on_attach,
-}
-lspconfig.kotlin_language_server.setup {
+})
+vim.lsp.config('kotlin_language_server', {
   capabilities = capabilities,
   on_attach = on_attach,
-}
-lspconfig.pylsp.setup {
+})
+vim.lsp.config('pylsp',  {
   capabilities = capabilities,
   on_attach = on_attach,
   settings = {
@@ -97,12 +96,12 @@ lspconfig.pylsp.setup {
       }
     }
   }
-}
-lspconfig.jedi_language_server.setup {
+})
+vim.lsp.config('jedi_language_server',  {
   capabilities = capabilities,
   on_attach = on_attach,
-}
-lspconfig.rust_analyzer.setup {
+})
+vim.lsp.config('rust_analyzer',  {
   capabilities = capabilities,
   on_attach = on_attach,
   settings = {
@@ -118,12 +117,12 @@ lspconfig.rust_analyzer.setup {
       },
     },
   },
-}
-lspconfig.zls.setup {
+})
+vim.lsp.config('zls',  {
   capabilities = capabilities,
   on_attach = on_attach,
-}
-lspconfig.lua_ls.setup {
+})
+vim.lsp.config('lua_ls',  {
   capabilities = capabilities,
   on_attach = on_attach,
   settings = {
@@ -146,4 +145,4 @@ lspconfig.lua_ls.setup {
       },
     },
   },
-}
+})
