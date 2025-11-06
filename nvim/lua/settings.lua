@@ -6,7 +6,7 @@ vim.opt.diffexpr = ''
 vim.opt.expandtab = true
 vim.opt.fileformats = { 'unix', 'dos', 'mac' }
 vim.opt.foldmethod = 'syntax'
-vim.opt.guifont = { 'Envy Code R', 'h12' }
+vim.opt.guifont = 'EnvyCodeR Nerd Font:h14'
 vim.opt.history = 50
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
@@ -34,7 +34,6 @@ vim.g.mapleader = ','
 vim.g.netrw_banner = 0
 vim.g.netrw_browse_split = 0
 vim.g.netrw_hide = 0
-vim.g.netrw_liststyle = 3
-vim.g.netrw_winsize = 20
+vim.g.netrw_liststyle = 1
 
 vim.cmd.colorscheme('neopro')
