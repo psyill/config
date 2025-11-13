@@ -1,5 +1,4 @@
 [user]
-  email = psyill.net@gmail.com
   name = Hans Ellegård
 [core]
   autocrlf = input
@@ -9,10 +8,10 @@
   pager = true
   ui = auto
 [merge]
-  guitool = bc4
+  guitool = meld
   tool = nvimdiff
 [diff]
-  guitool = bc4
+  guitool = meld
   tool = nvimdiff
 [difftool]
   guiDefault = true
