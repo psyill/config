@@ -5,8 +5,9 @@ set --export --path RIPGREP_CONFIG_PATH "$HOME/.config/ripgrep/config"
 set --export PIPEWIRE_RUNTIME_DIR $XDG_RUNTIME_DIR/pipewire
 set --export PULSE_RUNTIME_PATH $XDG_RUNTIME_DIR/pulse
 
-set --export ANDROID_SDK_ROOT "$HOME/android-sdk"
-#set --export STUDIO_JDK /usr/lib/jvm/java-11-openjdk
+set --export TIME_STYLE long-iso
+
+set --export REPO_URL file:///var/code/git-repo-bare
 
 if status is-login
   if not set --query SSH_AGENT_PID

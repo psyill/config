@@ -1,4 +1,5 @@
 [user]
+  email = hans.ellegard@inter.ikea.com
   name = Hans Ellegård
 [core]
   autocrlf = input

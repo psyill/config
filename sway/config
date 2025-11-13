@@ -211,11 +211,16 @@ client.background       #e0e0e0
 
 output eDP-1 {
   pos 1920 0
+  background ~/Downloads/kaseberga.jpg fit
 }
 
 output HDMI-A-1 {
   pos 0 0
+  background ~/Downloads/kaseberga.jpg fit
 }
 output DP-1 {
   pos 3840 0
+  background ~/Downloads/kaseberga.jpg fit
 }
+
+exec swaync
