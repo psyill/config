@@ -223,4 +223,8 @@ output DP-1 {
   background ~/Downloads/kaseberga.jpg fit
 }
 
+include /etc/sway/config.d/*
+exec systemctl --user import-environment XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
+exec hash dbus-update-activation-environment 2>/dev/null && \
+        dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
 exec swaync
