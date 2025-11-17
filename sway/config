@@ -219,3 +219,5 @@ output HDMI-A-1 {
 output DP-1 {
   pos 3840 0
 }
+
+exec dbus-update-activation-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
