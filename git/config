@@ -7,10 +7,13 @@
 [color]
   pager = true
   ui = auto
+[format]
+  pretty = fuller
 [merge]
   guitool = meld
   tool = nvimdiff
 [diff]
+  colorMoved = zebra
   guitool = meld
   tool = nvimdiff
 [difftool]
