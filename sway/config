@@ -211,10 +211,12 @@ client.background       #e0e0e0
 
 output eDP-1 {
   pos 1920 0
+  background ~/gfx/photos_2025/20250410\ Alf\ och\ Ragnar\ i\ Flygfältsparken.jpg fill
 }
 
 output HDMI-A-1 {
   pos 0 0
+  background ~/download/römö\ strand.jpg fill
 }
 output DP-1 {
   pos 3840 0
