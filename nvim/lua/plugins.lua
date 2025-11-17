@@ -80,6 +80,7 @@ vim.lsp.config('clangd', {
   capabilities = capabilities,
   on_attach = on_attach,
 })
+vim.lsp.enable('clangd')
 vim.lsp.config('kotlin_language_server', {
   capabilities = capabilities,
   on_attach = on_attach,
@@ -97,10 +98,7 @@ vim.lsp.config('pylsp',  {
     }
   }
 })
-vim.lsp.config('jedi_language_server',  {
-  capabilities = capabilities,
-  on_attach = on_attach,
-})
+vim.lsp.enable('pylsp')
 vim.lsp.config('rust_analyzer',  {
   capabilities = capabilities,
   on_attach = on_attach,
@@ -146,3 +144,4 @@ vim.lsp.config('lua_ls',  {
     },
   },
 })
+vim.lsp.enable('lua_ls')
