@@ -171,7 +171,7 @@ bindsym $mod2+space mode $layout_mode
 bar {
   hidden_state show
   pango_markup enabled
-  #status_command batterybar
+  status_command batterybar
 }
 
 # Default to tabbed layout.
