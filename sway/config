@@ -5,13 +5,23 @@ set $mod2 Mod1+Shift
 set $terminal foot
 
 # Input (keyboard) configuration
-input type:keyboard xkb_model pc102
-input type:keyboard xkb_layout us,se
-input type:keyboard xkb_options grp:sclk_toggle
+input type:keyboard {
+  xkb_model pc102
+  xkb_layout us,se
+  xkb_options grp:sclk_toggle
+}
 
 # Input (drawing tablet) configuration
 input type:tablet_pad map_to_output eDP-1
 input type:tablet_tool map_to_output eDP-1
+
+input type:touchpad {
+  click_method clickfinger
+  dwt enabled
+  natural_scroll disabled
+  tap enabled
+  tap_button_map lrm
+}
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
