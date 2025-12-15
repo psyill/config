@@ -93,7 +93,13 @@ vim.lsp.config('pylsp',  {
       plugins = {
         black = {
           enabled = true,
-        }
+        },
+        flake8 = {
+          enabled = true,
+        },
+        pylint = {
+          enabled = true,
+        },
       }
     }
   }
@@ -116,6 +122,7 @@ vim.lsp.config('rust_analyzer',  {
     },
   },
 })
+vim.lsp.enable('rust_analyzer')
 vim.lsp.config('zls',  {
   capabilities = capabilities,
   on_attach = on_attach,
