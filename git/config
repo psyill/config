@@ -31,3 +31,5 @@
   allow = always
 [pull]
   ff = only
+[http]
+  cookiefile = /home/hans-ellegard/.gitcookies
