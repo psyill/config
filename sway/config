@@ -8,7 +8,8 @@ set $terminal foot
 input type:keyboard {
   xkb_model pc102
   xkb_layout us,se
-  xkb_options grp:sclk_toggle
+  # Switch layout with ScrollLock or both Shift keys.
+  xkb_options grp:sclk_toggle,grp:shifts_toggle
 }
 
 # Input (drawing tablet) configuration
