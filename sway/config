@@ -199,6 +199,7 @@ for_window [app_id="chromium-browser"] move container to workspace 2
 for_window [app_id="Opera"] move container to workspace 2
 for_window [class="Opera"] move container to workspace 2
 for_window [app_id="nvim-qt"] move container to workspace 3
+for_window [app_id="dev.zed.Zed"] move container to workspace 3
 for_window [class="Slack"] move container to workspace 4
 
 # color class           border  background text    indicator child_border
